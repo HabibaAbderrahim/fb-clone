@@ -12,6 +12,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatDialogModule} from "@angular/material/dialog";
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +20,12 @@ import {MatDialogModule} from "@angular/material/dialog";
     LoginComponent,
     RegisterComponent,
 
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,FormsModule,
-    MatIconModule,
     MatCardModule,
     MatSnackBarModule,
     MatProgressSpinnerModule,
