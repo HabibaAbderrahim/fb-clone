@@ -1,0 +1,69 @@
+<div class="home__header">
+
+  <div class="home__header__left">
+      <img mat-card-avatar src="https://www.facebook.com/images/fb_icon_325x325.png"/>
+      <div class="input">
+        <mat-icon class="search-icon">search_outline</mat-icon>
+        <form>
+          <input placeholder="Search Facebook" type="text">
+        </form>
+    </div>
+  </div>
+
+  <div class="home__header__middle">
+    <div class="active">
+      <mat-icon>home</mat-icon>
+    </div>
+    <div>
+      <mat-icon>ondemand_video</mat-icon>
+    </div>
+    <div>
+      <mat-icon>store</mat-icon>
+    </div>
+    <div>
+      <mat-icon>group</mat-icon>
+    </div>
+    <div>
+      <mat-icon>flag</mat-icon>
+    </div>
+  </div>
+
+  <div class="home__header__right">
+    <div>
+      <img  mat-card-avatar
+        alt=""
+        src="https://polyvore.tn/wp-content/uploads/2021/03/1616492539_162_E-Girl-decouvrez-ce-nouveau-style-en-plein-essor-sur-TikTok.jpg">
+      <span class="name">Hana belg</span>
+    </div>
+    <div>
+      <mat-icon>add</mat-icon>
+    </div>
+
+    <div>
+      <mat-icon matBadge="4"
+                matBadgeColor="primary"
+                matBadgeOverlap="false"
+                matBadgePosition="above after"> forum
+      </mat-icon>
+    </div>
+
+    <div>
+      <mat-icon matBadge="3"
+                matBadgeColor="warn"
+                matBadgeOverlap="false">notifications
+      </mat-icon>
+    </div>
+    <div>
+    <mat-icon [matMenuTriggerFor]="menu">expand_more</mat-icon>
+       <mat-menu class="menu" #menu="matMenu">
+         <button mat-menu-item>
+           <mat-icon>exit_to_app</mat-icon>Logout
+         </button>
+       </mat-menu>
+    </div>
+
+
+
+
+  </div>
+</div>
