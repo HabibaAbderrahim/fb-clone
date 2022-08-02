@@ -1,0 +1,136 @@
+<div class="home-container">
+      <app-nav-bar></app-nav-bar>
+      <router-outlet></router-outlet>
+
+  <div class="home__body">
+
+    <div class="home__body__sidebarLeft">
+      <div class="inside">
+        <div class="user-avatar">
+          <img
+            alt=""
+            mat-card-avatar
+            src="https://polyvore.tn/wp-content/uploads/2021/03/1616492539_162_E-Girl-decouvrez-ce-nouveau-style-en-plein-essor-sur-TikTok.jpg">
+          <span class="name">Hello</span>
+        </div>
+        <div>
+          <mat-icon> local_hospital</mat-icon>
+          <span class="covid">COVID-19 Information Center</span>
+        </div>
+
+        <div>
+          <mat-icon>flag</mat-icon>
+          <span>Pages</span>
+        </div>
+
+        <div>
+          <mat-icon>people</mat-icon>
+          <span>Friends</span>
+        </div>
+
+        <div>
+          <mat-icon> chat</mat-icon>
+          <span>Messenger</span>
+        </div>
+
+        <div>
+          <mat-icon>store</mat-icon>
+          <span>Marketplace</span>
+        </div>
+
+        <div>
+          <mat-icon>video_library</mat-icon>
+          <span>Videos</span>
+        </div>
+
+        <div>
+          <mat-icon class="see-more">expand_more</mat-icon>
+          <span>See More</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="home__body__contentMiddle">
+
+      <div class="home__body__contentMiddle__top">
+        <!--IMAGE CARDS-->
+        <mat-card class="image-card">
+          <img alt="bg"
+               class="bg" src="https://polyvore.tn/wp-content/uploads/2021/03/1616492539_162_E-Girl-decouvrez-ce-nouveau-style-en-plein-essor-sur-TikTok.jpg">
+          <mat-card-content>
+            <img
+
+              class="avatar" src="https://polyvore.tn/wp-content/uploads/2021/03/1616492539_162_E-Girl-decouvrez-ce-nouveau-style-en-plein-essor-sur-TikTok.jpg">
+            <span class="card-name">Indranil Mukherjee</span>
+          </mat-card-content>
+        </mat-card>
+
+      </div>
+
+      <div class="home__body__contentMiddle__center">
+        <mat-card class="post-message">
+          <mat-card-header class="post-message-header"
+                           style="padding-bottom: 20px; border-bottom: 1px solid lightgray;">
+            <img
+              alt=""
+              mat-card-avatar
+              src="https://polyvore.tn/wp-content/uploads/2021/03/1616492539_162_E-Girl-decouvrez-ce-nouveau-style-en-plein-essor-sur-TikTok.jpg">
+            <form #form="ngForm">
+              <input class="on-your-mind" name="message" ngModel placeholder="What's on your mind?" type="text">
+              <button style="display: none;" type="submit"></button>
+            </form>
+
+          </mat-card-header>
+          <div class="hello">
+          <mat-card-content class="card-body">
+            <div>
+              <mat-icon color="accent">videocam</mat-icon>
+              <span>Live Video</span>
+            </div>
+
+            <div>
+              <mat-icon color="primary">photo_album</mat-icon>
+              <span>Photo/Video</span>
+            </div>
+
+            <div>
+              <mat-icon color="warn">mood</mat-icon>
+              <span>Feeling/Activity</span>
+            </div>
+
+          </mat-card-content>
+          </div>
+        </mat-card>
+
+        <!--Loop Through All Posts From Database and Display-->
+        <mat-card  class="posts">
+          <mat-card-header class="posts__header">
+            <img alt="" mat-card-avatar src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEzNzYzNn0?utm_source=dictionnaire&utm_medium=referral">
+            <div class="posts__header__right">
+              <span>hello</span>
+              <h3>hello</h3>
+            </div>
+          </mat-card-header>
+          <mat-card-content class="posts__body">
+            <p>Helllo</p>
+          </mat-card-content>
+        </mat-card>
+
+
+      </div>
+
+
+    </div>
+
+    <div class="home__body__feedRight">
+      <div class="inside">
+        <img src="">
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
