@@ -15,7 +15,7 @@ import {MatDialogModule} from "@angular/material/dialog";
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import {AngularFireAuthModule} from "@angular/fire/compat/auth";
 import {AngularFireModule} from "@angular/fire/compat";
-import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
+import {AngularFirestoreCollection, AngularFirestoreModule} from "@angular/fire/compat/firestore";
 import {environment} from "../environments/environment";
 
 @NgModule({
@@ -36,7 +36,10 @@ import {environment} from "../environments/environment";
     MatDialogModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    FormsModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
